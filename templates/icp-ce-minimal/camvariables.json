@@ -74,5 +74,38 @@
     "required": false,
     "secured": false,
     "type": "string"
+  },
+  {
+    "name": "private_vlan_number",
+    "label": "Private VLAN Number",
+    "description": "Private VLAN number to place all VMs on.  e.g. 1211. See Network > IP Management > VLANs in the portal. Leave blank to let the system choose.",
+    "default": "-1",
+    "hidden": false,
+    "immutable": false,
+    "required": false,
+    "secured": false,
+    "type": "string"
+  },
+  {
+    "name": "public_vlan_number",
+    "label": "Public VLAN Number",
+    "description": "Public VLAN number to place all VMs on.  e.g. 1171. See Network > IP Management > VLANs in the portal. Leave blank to let the system choose.",
+    "default": "-1",
+    "hidden": false,
+    "immutable": false,
+    "required": false,
+    "secured": false,
+    "type": "string"
+  },
+  {
+    "name": "private_network_only",
+    "label": "Private Network Only",
+    "description": "Specify false to place the cluster on the public network. If public network access is disabled, you will require a NAT gateway device like a Gateway Appliance on the VLAN.",
+    "default": "false",
+    "hidden": false,
+    "immutable": false,
+    "required": false,
+    "secured": false,
+    "type": "string"
   }
 ]
