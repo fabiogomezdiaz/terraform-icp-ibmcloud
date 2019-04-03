@@ -1,25 +1,5 @@
 [
   {
-    "name": "sl_username",
-    "label": "SoftLayer Username",
-    "description": "Username for IBM Cloud infrastructure account",
-    "hidden": false,
-    "immutable": false,
-    "required": true,
-    "secured": false,
-    "type": "string"
-  },
-  {
-    "name": "sl_api_key",
-    "label": "SoftLayer API Key",
-    "description": "API Key for IBM Cloud infrastructure account",
-    "hidden": false,
-    "immutable": false,
-    "required": true,
-    "secured": true,
-    "type": "string"
-  },
-  {
     "name": "os_reference_code",
     "label": "OS to install on the VSIs",
     "description": "OS to install on the VSIs. Use the API to determine valid values. Only Ubuntu 16.04 was tested",
@@ -76,10 +56,32 @@
     "type": "string"
   },
   {
+    "name": "private_vlan_router_hostname",
+    "label": "Private VLAN Router Hostname",
+    "description": "Private VLAN Router Hostname to place all VMs on.  e.g. bcr01a. See Network > IP Management > VLANs in the portal. Leave blank to let the system choose.",
+    "default": "",
+    "hidden": false,
+    "immutable": false,
+    "required": false,
+    "secured": false,
+    "type": "string"
+  },
+  {
     "name": "private_vlan_number",
     "label": "Private VLAN Number",
     "description": "Private VLAN number to place all VMs on.  e.g. 1211. See Network > IP Management > VLANs in the portal. Leave blank to let the system choose.",
     "default": "-1",
+    "hidden": false,
+    "immutable": false,
+    "required": false,
+    "secured": false,
+    "type": "string"
+  },
+  {
+    "name": "public_vlan_router_hostname",
+    "label": "Public VLAN Router Hostname",
+    "description": "Public VLAN Router Hostname to place all VMs on.  e.g. fcr01a. See Network > IP Management > VLANs in the portal. Leave blank to let the system choose.",
+    "default": "",
     "hidden": false,
     "immutable": false,
     "required": false,

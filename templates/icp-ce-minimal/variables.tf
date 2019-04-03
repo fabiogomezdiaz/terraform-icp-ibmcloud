@@ -1,8 +1,10 @@
 ##### SoftLayer/IBMCloud Access Credentials ######
 
 # Provide values for these in terraform.tfvars
-variable "sl_username" { description = "IBM Cloud (aka SoftLayer) user name." }
-variable "sl_api_key" { description = "IBM Cloud (aka SoftLayer) API key." }
+//variable "sl_username" { description = "IBM Cloud (aka SoftLayer) user name." }
+//variable "sl_api_key" { description = "IBM Cloud (aka SoftLayer) API key." }
+
+# Set SL Username and API Key as environment variables SL_USERNAME and SL_API_KEY
 
 variable "key_name" {
   description = "Name or reference of SSH key to provision IBM Cloud instances with"
